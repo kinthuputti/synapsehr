@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: synapsehr
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: SYNAPSEHR_TOKENS
+        sync: false   # you type this in the Render dashboard, never commit it
+      - key: SYNAPSEHR_DB
+        value: /tmp/synapsehr.db
