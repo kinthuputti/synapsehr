@@ -5,6 +5,21 @@ I built **SynapseHR**, a multi-agent HR workflow system structured around a **La
 
 > **Work in progress.** This README documents what I built and tested across versions `v0.1`–`v0.12`, along with my evaluation results and current `v1.0` gaps.
 
+## Live demo
+
+**Try it:** https://synapsehr-w0u4.onrender.com
+
+The demo uses fictional employees and resumes only. Sign in with one of these API keys:
+
+| Role | API key |
+|---|---|
+| Employee (`E101`) | `demo-employee-0001` |
+| Reviewer (`HR1`) | `demo-reviewer-0001` |
+| Second reviewer (`HR2`) | `demo-reviewer-0002` |
+
+Try the walkthrough below: sign in as the employee and submit a leave request, then sign in as a reviewer and decide it.
+
+This runs on a free hosting plan, so the first load can take about a minute, and the data resets whenever it restarts.
 ---
 
 ## Core Design Principles
@@ -35,8 +50,7 @@ Because HR workflows affect people directly, I intentionally avoided autonomous,
 | **v0.10** | **Balance & policy enforcement:** re-evaluates pending cases against live balances at decision time; blocks over-balance approvals and ambiguous multi-type leave requests; answers personal balance and WFH eligibility questions from employee records; marks unanswerable queries `"Passed to HR"` | Built, tested |
 | **v0.11** | **HR workspace:** `People` directory (balances, history, requests), resume screening form with side-by-side resume viewer, separation of reviewer's own leave, audit logging for all record/resume views, and built-in fictional demo resumes (`demo/resumes.csv`) | Built, tested |
 | **v0.12** | **Candidate & interview pipeline (`hiring.py`):** screening approvals create candidates; HR books interviews (blocking past times and double-bookings); assigned interviewers log feedback and 1–5 ratings; hiring decisions (`offer`, `reject`, `hold`) route through the human checkpoint; candidate view links resumes, interviews, and multi-job applications | Built, tested |
-| **v1.0** | **Production readiness:** deployment setup, real user accounts, Postgres persistence | **Not built** |
-
+| **v1.0** | **Production readiness:** deployment setup, real user accounts, Postgres persistence | **Partly built.** Deployed as a free-tier demo with fictional data (see Live demo above). Real user accounts and Postgres persistence are **not built** |
 ---
 
 ## Architecture & Access Control
