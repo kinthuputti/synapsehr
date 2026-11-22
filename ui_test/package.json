@@ -1,0 +1,7 @@
+{
+  "name": "synapsehr-ui-test",
+  "private": true,
+  "description": "Headless test of the SynapseHR review page (real React, simulated browser).",
+  "scripts": { "test": "node ui_test.js" },
+  "devDependencies": { "jsdom": "^24.1.0", "react": "18.3.1", "react-dom": "18.3.1" }
+}

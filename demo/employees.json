@@ -1,0 +1,112 @@
+{
+  "E101": {
+    "annual_balance": 12,
+    "sick_balance": 6,
+    "manager": "M01",
+    "history": [
+      {
+        "date": "2026-02-16",
+        "kind": "annual",
+        "days": 3
+      },
+      {
+        "date": "2026-04-08",
+        "kind": "sick",
+        "days": 2
+      },
+      {
+        "date": "2026-07-20",
+        "kind": "annual",
+        "days": 3
+      },
+      {
+        "date": "2026-10-05",
+        "kind": "sick",
+        "days": 2
+      }
+    ],
+    "hire_date": "2023-05-15"
+  },
+  "E102": {
+    "annual_balance": 2,
+    "sick_balance": 10,
+    "manager": "M01",
+    "history": [
+      {
+        "date": "2026-01-05",
+        "kind": "annual",
+        "days": 5
+      },
+      {
+        "date": "2026-04-06",
+        "kind": "annual",
+        "days": 5
+      },
+      {
+        "date": "2026-08-03",
+        "kind": "annual",
+        "days": 6
+      }
+    ],
+    "hire_date": "2024-02-01"
+  },
+  "E103": {
+    "annual_balance": 18,
+    "sick_balance": 1,
+    "manager": "M02",
+    "history": [
+      {
+        "date": "2026-03-02",
+        "kind": "sick",
+        "days": 3
+      },
+      {
+        "date": "2026-06-15",
+        "kind": "sick",
+        "days": 3
+      },
+      {
+        "date": "2026-09-21",
+        "kind": "sick",
+        "days": 3
+      }
+    ],
+    "hire_date": "2026-10-01"
+  },
+  "HR1": {
+    "annual_balance": 14,
+    "sick_balance": 10,
+    "manager": "M03",
+    "hire_date": "2022-09-12",
+    "history": [
+      {
+        "date": "2026-05-04",
+        "kind": "annual",
+        "days": 4
+      }
+    ]
+  },
+  "HR2": {
+    "annual_balance": 9,
+    "sick_balance": 8,
+    "manager": "M03",
+    "hire_date": "2024-06-03",
+    "history": [
+      {
+        "date": "2026-03-23",
+        "kind": "annual",
+        "days": 5
+      },
+      {
+        "date": "2026-08-10",
+        "kind": "annual",
+        "days": 4
+      },
+      {
+        "date": "2026-06-01",
+        "kind": "sick",
+        "days": 2
+      }
+    ]
+  }
+}

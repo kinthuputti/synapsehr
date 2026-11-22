@@ -1,0 +1,20 @@
+# secrets and local config
+.env
+*.key
+
+# data that must not be committed (real resumes, caches, logs, results)
+data/
+cache/
+audit/
+results/
+*.db
+*.db-journal
+
+# python / node
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+eval/resumes_for_labeling.txt*
+*.db-shm
+*.db-wal
